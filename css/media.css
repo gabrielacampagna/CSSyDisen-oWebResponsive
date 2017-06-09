@@ -1,0 +1,70 @@
+@media (max-width: 900px){
+
+    .contenedor{
+        display: flex;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside .imagensecundaria{
+    display: flex;
+    flex-direction: column;
+    }
+
+
+    footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    footer .contacto{
+        width: 100%;
+    }
+
+    footer .terminos{
+        width: 100%;
+    }
+
+    footer .rrss img{
+        width: 30%;
+    }
+
+    footer .derechos{
+        width: 100%;
+    }
+
+/*PAGINA PAISAJES*/
+    aside .imagenespaisajes{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .imagenespaisajes img{
+        width: 18em;
+        margin: 20px;
+    }
+
+
+/*PAGINA RETRATOS*/
+    aside .imagenesretratos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .imagenesretratos img{
+        width: 18em;
+        margin: 20px;
+    }
+
+
+}

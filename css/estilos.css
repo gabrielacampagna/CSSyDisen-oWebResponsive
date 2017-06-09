@@ -1,0 +1,287 @@
+.contenedor{
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    background-color:#02010a ;
+    border-radius: 10px 10px 10px 10px;
+    font-family: 'Dancing Script', cursive;
+    
+    /*Display*/
+    display:flex;
+    flex-flow: row wrap;
+}
+
+img{
+    box-shadow: 2px 2px 2px #02010a;
+}
+
+
+
+
+
+/*CABECERA*/
+header{
+    width: 100%;
+    padding: 20px;
+    background-color: #5b7989;
+    border-radius: 10px 10px 0px 0px;
+    animation: slidein 1s;
+    /*Display*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@-webkit-keyframes slidein{
+    0%{
+        margin-top: 150%;
+    }
+    60%{
+        margin-top: -5%;
+    }
+    100%{
+        margin-top: 0%;
+    }
+}
+
+h1{
+    font-size: 30px;
+    color: white;
+    text-shadow: 0px 5px 5px  #02010a;
+}
+
+nav{
+    /*Display*/
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    font-size: 20px;
+    color: white;
+    padding: 15px;
+}
+
+nav:target{
+    text-decoration: none;
+}
+
+nav a:link{ 
+color: #666666; 
+}
+
+nav ul { 
+    display: flex;
+    padding: 15px; }
+    
+.menu li {
+    list-style: none;
+}
+
+
+body#Inicio ul.menu li:nth-child(1) a,
+body#pa ul.menu li:nth-child(2) a,
+body#ret ul.menu li:nth-child(3) a {
+    text-decoration: none;
+}
+
+
+
+
+/*IMAGEN CENTRAL*/
+aside .imagenprincipal{
+    background-color: #82c3a6;
+    padding: 20px;
+    
+    /*Display*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+aside .imagenprincipal img{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    
+}
+
+
+
+
+/*IMAGEN SECUNDARIA*/
+aside .imagensecundaria{
+    background-color: #d5c75f;
+    padding: 20px;
+
+    /*Display*/
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+aside .imagensecundaria img{
+    width: 80%;
+    margin: auto;
+    border: 1px solid;
+    
+    /*Display*/
+    display: flex;
+    flex-direction: row;
+}
+
+aside .imagen1{
+    padding-bottom: 20px;
+    /*Display*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside .imagen1 a{
+    font-size: 20px;
+    color: black;
+}
+
+aside .imagen1:hover img{
+    transform: rotate(10deg);
+    box-shadow: 5px 5px 5px #82c3a6;
+    border: 2px solid;
+}
+
+aside .imagen2{
+    padding-bottom: 20px;
+    /*Display*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside .imagen2 a{
+    font-size: 20px;
+    color: black;
+}
+
+aside .imagen2:hover img{
+    transform: translate(5px, -20px);
+    box-shadow: 5px 5px 5px #82c3a6 ;
+    border: 2px solid;
+}
+
+
+
+
+
+
+/*PIE DE PAGINA*/
+
+footer{
+    width: 100%;
+    padding: 10px;
+    background-color: #C6d5c5;
+    border-radius: 0px 0px 10px 10px;
+    text-align: left;
+
+    /*Display*/
+    display: flex;
+    flex-direction: row;
+}
+
+footer .contacto{
+    width: 25%;
+}
+
+footer .terminos{
+    width: 25%;
+}
+
+footer .rrss{
+    width: 25%;
+    align-content: left;
+}
+
+footer .rrss img{
+    width: 10%;
+    margin: 5px; 
+}
+
+footer .iconosrrss{
+    /*Display*/
+    display: flex;
+    flex-direction: column;
+}
+
+footer .derechos{
+    width: 25%;
+}
+
+h2{
+    font-size: 30px;
+}
+
+
+
+
+/* PAGINA PAISAJES */
+
+aside{
+    width: 100%;
+}
+.imagenespaisajes{
+    width: 100%;
+    background-color: #d5c75f;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.imagenespaisajes img{
+    margin: 20px;
+    width: 15rem;
+}
+
+.imagenp:first-child{
+    -webkit-filter: blur(10px);
+}
+
+.imagenp:nth-child(3){
+    -webkit-filter: sepia(90%);
+}
+
+.imagenp:nth-child(2n+0){
+    -webkit-filter: grayscale(100%);
+}
+
+
+/* PAGINA RETRATOS */
+
+aside{
+    width: 100%;
+}
+.imagenesretratos{
+    width: 100%;
+    background-color: #d5c75f;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.imagenesretratos img{
+    margin: 20px;
+    width: 15rem;
+}
+
+.imagenr:first-child{
+    -webkit-filter: blur(10px);
+}
+
+.imagenr:nth-child(3){
+    -webkit-filter: sepia(90%);
+}
+
+.imagenr:nth-child(2n+0){
+    -webkit-filter: grayscale(100%);
+}
+
+
